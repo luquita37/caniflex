@@ -1,0 +1,10 @@
+Coloca aquí tus fotos para la página:
+- logo.png (Tu logo en formato .png)
+- imagen1.jpg (Ideal para la imagen principal destacada / Hero)
+- imagen2.jpg (Ideal para la categoría: Sistemas de Conexión y Acople)
+- imagen3.jpg (Ideal para la categoría: Mangueras Industriales)
+- imagen4.jpg (Ideal para la categoría: Control de Flujo)
+- imagen5.jpg (Ideal para la categoría: Seguridad y Protección)
+- imagen6.jpg (Ideal para la categoría: Soporte e Instalación)
+- imagen7.jpg (Ideal para la categoría: Soluciones Especiales)
+- imagen8.jpg (Ideal para el fondo oscuro del CTA de contacto final)
