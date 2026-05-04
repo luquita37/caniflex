@@ -1,10 +1,21 @@
-Coloca aquí tus fotos para la página:
+Coloca aquí tus fotos para la página (Por favor, usa guiones bajos en lugar de espacios para evitar problemas al subir por FTP):
+
+-- LOGO --
 - logo.png (Tu logo en formato .png)
-- imagen1.jpg (Ideal para la imagen principal destacada / Hero)
-- imagen2.jpg (Ideal para la categoría: Sistemas de Conexión y Acople)
-- imagen3.jpg (Ideal para la categoría: Mangueras Industriales)
-- imagen4.jpg (Ideal para la categoría: Control de Flujo)
-- imagen5.jpg (Ideal para la categoría: Seguridad y Protección)
-- imagen6.jpg (Ideal para la categoría: Soporte e Instalación)
-- imagen7.jpg (Ideal para la categoría: Soluciones Especiales)
-- imagen8.jpg (Ideal para el fondo oscuro del CTA de contacto final)
+
+-- CARRUSEL PRINCIPAL (12 imágenes) --
+- imagen_carrusel_1.jpg, imagen_carrusel_2.jpg, ... hasta imagen_carrusel_12.jpg
+
+-- MARCAS / LOGOS (8 imágenes) --
+- marca_1.png, marca_2.png, ... hasta marca_8.png
+
+-- CATEGORÍAS (Soluciones por Aplicación) --
+- imagen2.jpg (Categoría: Sistemas de Conexión y Acople)
+- imagen3.jpg (Categoría: Mangueras Industriales)
+- imagen4.jpg (Categoría: Control de Flujo)
+- imagen5.jpg (Categoría: Seguridad y Protección)
+- imagen6.jpg (Categoría: Soporte e Instalación)
+- imagen7.jpg (Categoría: Soluciones Especiales)
+
+-- FONDO CTA FINAL --
+- imagen8.jpg (Fondo del CTA de contacto final)
