@@ -53,6 +53,10 @@ export default function App() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Logo Cañiflex" className="h-12 w-auto object-contain" />
+            <div className="hidden sm:flex flex-col border-l border-slate-300 pl-4 ml-2">
+              <span className="text-lg font-black tracking-widest text-slate-900 leading-none">INGENIERÍA Y SOLUCIONES</span>
+              <span className="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Para la conducción de fluidos</span>
+            </div>
           </div>
           <div className="hidden md:block">
             <a
@@ -88,13 +92,13 @@ export default function App() {
                 Alto a las pérdidas operativas
               </div>
               <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-                Detenga las fugas. <br />
+                Tenemos la solución. <br />
                 <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(249,115,22,0.3)]">
                   Asegure su operación.
                 </span>
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-400 sm:text-xl">
-                Soluciones de conducción, conexión y control de fluidos de grado industrial. Diseñadas para eliminar riesgos, reducir mantenimiento y maximizar la eficiencia.
+                Soluciones para la conducción de fluidos - Conexionados que cumplen con normativas internacionales. -
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <a
@@ -142,35 +146,6 @@ export default function App() {
                   />
                 </AnimatePresence>
                 
-                {/* Floating Glass Badges */}
-                <motion.div 
-                  animate={{ y: [0, -15, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute top-8 left-8 z-20 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#030712]/60 p-4 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30">
-                    <ShieldCheck className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-white">Cero Fugas</p>
-                    <p className="text-xs font-mono text-blue-300/70 uppercase tracking-wider">Garantía estanca</p>
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                  animate={{ y: [0, 15, 0] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute bottom-8 right-8 z-20 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#030712]/60 p-4 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500/20 text-orange-400 ring-1 ring-orange-500/30">
-                    <Settings className="h-5 w-5 animate-spin-slow" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-white">Alta Presión</p>
-                    <p className="text-xs font-mono text-orange-300/70 uppercase tracking-wider">Soporte extremo</p>
-                  </div>
-                </motion.div>
-
                 {/* Navigation Buttons */}
                 <div className="absolute inset-0 z-30 flex items-center justify-between p-4 px-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
                   <button 
@@ -237,7 +212,7 @@ export default function App() {
               { icon: Droplets, title: 'Fugas y Pérdidas', desc: 'Derrame de fluidos críticos que drenan su presupuesto y generan multas.' },
               { icon: TrendingDown, title: 'Caídas de Presión', desc: 'Sistemas ineficientes que obligan a sus equipos a trabajar forzados.' },
               { icon: Timer, title: 'Paradas Constantes', desc: 'Mantenimiento correctivo frecuente por desgaste prematuro.' },
-              { icon: ShieldAlert, title: 'Riesgos Operativos', desc: 'Conexiones inseguras que pueden ceder bajo presión.' },
+              { icon: ShieldAlert, title: 'Riesgos Operativos', desc: 'Conexiones inseguras que no cumplen con las normativas internacionales.' },
             ].map((problem, i) => (
               <motion.div
                 key={i}
@@ -282,42 +257,42 @@ export default function App() {
                 icon: Link,
                 title: 'Sistemas de Conexión y Acople',
                 resolve: 'Tiempos muertos y fugas en uniones.',
-                items: ['Racores NPT/BSPT y Bronce', 'Acoplamientos CAMLOCK', 'Acoples rápidos y americanos', 'Conexiones automáticas'],
+                items: ['Racores NPT/BSPT y Bronce', 'Acoplamientos CAMLOCK', 'Acoples rápidos y americanos', 'Conexiones para neumática'],
                 img: '/imagen2.jpg'
               },
               {
                 icon: Droplets,
-                title: 'Mangueras Industriales',
+                title: 'Mangueras industriales y Tubos ( THSC )',
                 resolve: 'Degradación por fluidos agresivos.',
-                items: ['Hidrocarburos, Vapor, Químicos', 'Alimenticia, GNC, Combustibles', 'Ultra alta presión y Arenado', 'Tubos hidráulicos (THSC)'],
+                items: ['Hidrocarburos, Vapor, Químicos, Arenado', 'Alimenticia, GNC, Combustibles', 'Ultra alta presión'],
                 img: '/imagen3.jpg'
               },
               {
                 icon: Settings,
                 title: 'Control de Flujo',
                 resolve: 'Falta de precisión y bloqueos.',
-                items: ['Válvulas mariposa (Wafer / Lug)', 'Válvulas esféricas de alta resistencia', 'Sistemas de retención', 'Reguladores de caudal'],
+                items: ['Válvulas mariposa (Wafer / Lug)', 'Válvulas esféricas de alta resistencia'],
                 img: '/imagen4.jpg'
               },
               {
                 icon: ShieldAlert,
                 title: 'Seguridad y Protección',
                 resolve: 'Accidentes laborales y roturas.',
-                items: ['Abrazaderas super presión', 'Cable de seguridad anti-látigo', 'Protector espiralado', 'Manga protectora de Kevlar'],
+                items: ['Abrazaderas super presión', 'Cable de seguridad anti-látigo', 'Protector espiralado para mangueras', 'Manga protectora de Kevlar'],
                 img: '/imagen5.jpg'
               },
               {
                 icon: Wrench,
                 title: 'Soporte e Instalación',
                 resolve: 'Vibraciones destructivas.',
-                items: ['Soportes para tubos simples', 'Soportes para tubos dobles', 'Sistemas de anclaje industrial', 'Fijaciones antivibratorias'],
+                items: ['Soportes para tubos simples', 'Soportes para tubos dobles', 'Empaquetaduras y sellos para cilindros'],
                 img: '/imagen6.jpg'
               },
               {
                 icon: Factory,
                 title: 'Soluciones Especiales',
                 resolve: 'Incompatibilidades y desgaste.',
-                items: ['Empaquetaduras a medida', 'Mecanizados de precisión', 'Servicios de asesoría en planta', 'Desarrollos a pedido'],
+                items: ['Mecanizados de precisión', 'Servicios de asesoría en planta', 'Desarrollos a pedido'],
                 img: '/imagen7.jpg'
               }
             ].map((cat, i) => (
@@ -377,7 +352,7 @@ export default function App() {
                 <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(249,115,22,0.15)]">rentabilidad</span>
               </h2>
               <p className="mb-8 text-lg text-slate-600 leading-relaxed">
-                Invertir en los componentes correctos no es un gasto, es una estrategia de ahorro a largo plazo. Nuestros clientes experimentan mejoras medibles desde el primer día de instalación.
+                Invertir en conexionado normativo y eficiente es una estrategia de ahorro a largo plazo. Nuestros clientes experimentan mejoras medibles desde el primer día de instalación.
               </p>
               <a
                 href="https://wa.me/543462541310?text=Hola!%20Quiero%20hablar%20con%20un%20asesor."
@@ -392,9 +367,9 @@ export default function App() {
             <div className="grid gap-6 sm:grid-cols-2">
               {[
                 { title: 'Reducción de pérdidas', desc: 'Eliminación de fugas de fluidos costosos.' },
-                { title: 'Menor instalación', desc: 'Sistemas diseñados para acople rápido.' },
+                { title: 'Menor instalación', desc: 'Sistemas diseñados para acoplamiento rápido.' },
                 { title: 'Seguridad operativa', desc: 'Protección total para su personal.' },
-                { title: 'Mayor vida útil', desc: 'Materiales resistentes a la abrasión.' },
+                { title: 'Mayor vida útil', desc: 'Materiales de calidad PREMIUM.' },
               ].map((benefit, i) => (
                 <motion.div 
                   key={i} 
@@ -457,8 +432,12 @@ export default function App() {
       <footer className="relative z-10 border-t border-slate-200 bg-white py-12 text-slate-600">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <img src="/logo.png" alt="Logo Cañiflex" className="h-10 w-auto object-contain" />
+              <div className="hidden sm:flex flex-col border-l border-slate-300 pl-4 ml-2">
+                <span className="text-lg font-black tracking-widest text-slate-900 leading-none">INGENIERÍA Y SOLUCIONES</span>
+                <span className="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Para la conducción de fluidos</span>
+              </div>
             </div>
             <p className="text-sm font-medium text-slate-500">
               © {new Date().getFullYear()} Cañiflex. Todos los derechos reservados.
