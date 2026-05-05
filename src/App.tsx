@@ -50,12 +50,12 @@ export default function App() {
 
       {/* Navbar */}
       <nav className="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur-xl shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Logo Cañiflex" className="h-12 w-auto object-contain" />
-            <div className="hidden sm:flex flex-col border-l border-slate-300 pl-4 ml-2">
-              <span className="text-lg font-black tracking-widest text-slate-900 leading-none">INGENIERÍA Y SOLUCIONES</span>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Para la conducción de fluidos</span>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <img src="/logo.png" alt="Logo Cañiflex" className="h-8 sm:h-12 w-auto object-contain shrink-0" />
+            <div className="flex flex-col border-l border-slate-300 pl-2 ml-1 sm:pl-4 sm:ml-2 shrink-0">
+              <span className="text-[10px] sm:text-sm md:text-lg font-black tracking-wide sm:tracking-widest text-slate-900 leading-none">INGENIERÍA Y SOLUCIONES</span>
+              <span className="text-[6px] sm:text-[8px] md:text-[10px] font-bold tracking-wider sm:tracking-[0.2em] text-slate-500 uppercase mt-0.5 sm:mt-1">Para la conducción de fluidos</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -173,16 +173,16 @@ export default function App() {
       <div className="relative z-10 flex overflow-hidden border-y border-slate-200 bg-white py-12 shadow-sm w-full">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 80 }}
           className="flex whitespace-nowrap w-max flex-nowrap"
         >
           {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex shrink-0 items-center gap-16 px-8 flex-nowrap">
-              {[...Array(8)].map((_, imgIndex) => (
+            <div key={i} className="flex shrink-0 items-center gap-8 sm:gap-16 px-4 sm:px-8 flex-nowrap">
+              {[...Array(32)].map((_, imgIndex) => (
                 <div key={imgIndex} className="flex shrink-0 items-center justify-center">
                   <img 
-                    src={`/marca_${imgIndex + 1}.png`} 
-                    alt={`Marca ${imgIndex + 1}`} 
+                    src={`/marca_${(imgIndex % 8) + 1}.png`} 
+                    alt={`Marca ${(imgIndex % 8) + 1}`} 
                     className="max-h-12 sm:max-h-16 w-auto object-contain transition-all hover:scale-105 opacity-60 hover:opacity-100 grayscale hover:grayscale-0 filter block" 
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';
@@ -437,11 +437,11 @@ export default function App() {
       <footer className="relative z-10 border-t border-slate-200 bg-white py-12 text-slate-600">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Logo Cañiflex" className="h-10 w-auto object-contain" />
-              <div className="hidden sm:flex flex-col border-l border-slate-300 pl-4 ml-2">
-                <span className="text-lg font-black tracking-widest text-slate-900 leading-none">INGENIERÍA Y SOLUCIONES</span>
-                <span className="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Para la conducción de fluidos</span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <img src="/logo.png" alt="Logo Cañiflex" className="h-8 sm:h-10 w-auto object-contain shrink-0" />
+              <div className="flex flex-col border-l border-slate-300 pl-2 ml-1 sm:pl-4 sm:ml-2 shrink-0">
+                <span className="text-[10px] sm:text-base md:text-lg font-black tracking-wide sm:tracking-widest text-slate-900 leading-none">INGENIERÍA Y SOLUCIONES</span>
+                <span className="text-[6px] sm:text-[8px] md:text-[10px] font-bold tracking-wider sm:tracking-[0.2em] text-slate-500 uppercase mt-0.5 sm:mt-1">Para la conducción de fluidos</span>
               </div>
             </div>
             <p className="text-sm font-medium text-slate-500">
