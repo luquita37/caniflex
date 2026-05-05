@@ -415,13 +415,18 @@ export default function App() {
                 Hable con nuestros especialistas hoy mismo. Analizaremos sus dolores operativos y le propondremos una solución definitiva.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row pointer-events-auto">
-                <button className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-4 text-lg font-bold text-white shadow-[0_0_30px_-5px_rgba(249,115,22,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_40px_-5px_rgba(249,115,22,0.6)] sm:w-auto">
+                <a
+                  href="https://wa.me/543462541310?text=Hola!%20Quiero%20hablar%20con%20un%20asesor."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-4 text-lg font-bold text-white shadow-[0_0_30px_-5px_rgba(249,115,22,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_40px_-5px_rgba(249,115,22,0.6)] sm:w-auto"
+                >
                   <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-150%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(150%)]">
                     <div className="relative h-full w-8 bg-white/20" />
                   </div>
                   <PhoneCall className="h-5 w-5" />
                   Contactar a un asesor
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>
